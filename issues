@@ -1,0 +1,22 @@
+Issues found and pending fixes.
+
+Pending fixes detected:
+
+Issues:
+
+* Huge programs runs laggy, slow and not responsive when launched from rshell. This will require research about the issue. Possible reason may
+be related with the size of the address space needed by those binaries since it's huge more bigger than the one used by rshell.
+
+Crashes:
+
+Issues solved:
+
+* Crash when no argument is passed and just <enter> is pressed (malloc failed or segmentation fault).
+* command.args[0] should contain the name of the binary called. Should be command.args[0] = command.binary.
+* Memory Leak: Implement method to free the allocated memory for the contents of the struct command.
+
+NOTES:
+
+With the implementation so far rshell is capable of running general GNU utilities without any problem such as ls, pwd, clear, touch, whoami, and so on.
+Git seems to work fine with rshell.
+

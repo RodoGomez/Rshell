@@ -1,0 +1,5 @@
+Features:
+
+    * Promt: Display a promt that shows the current directory and a char depending of the user (# root, $ non-priviled user)
+    * History feature: This will consists of two features, the history itself and the recognition of signals from the keyboard.
+    * Auto completion: Auto complete words from user input with TAB keyboard.
